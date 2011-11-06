@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b>Title:</b>
+  <%= @noticia.titulo %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @noticia.descripcion %>
+</p>
+
+<% @imagenes = @noticia.imagen %>
+<% if !@imagenes.blank? %>
+<p>
+   <%= image_tag @noticia.imagen %>
+</p>
+<% end %>
+
+
+<%= link_to 'Back', categorias_path %>

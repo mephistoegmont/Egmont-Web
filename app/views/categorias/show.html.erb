@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  
+  <div class="categorias"><%= @categoria.titulo %></div>
+</p>
+
+<% @galerias = @categoria.noticias %>
+
+<% @galerias.each do |galeria| %>
+
+<div class="paquetes">
+		<%= link_to galeria.titulo, galeria %>
+</div>
+<% end %>
+
+
+
+
+<b><%= link_to 'Back', categorias_path %></b>
+
+

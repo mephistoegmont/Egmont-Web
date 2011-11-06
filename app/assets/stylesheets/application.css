@@ -1,0 +1,272 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+
+*/
+
+@font-face {
+	font-family: 'vevey';
+
+  
+  src: url('vevey.eot');
+  src: url('../fonts/vevey.ttf');
+src: local('vevey'), url(../fonts/vevey.ttf) format('truetype');
+
+}
+
+body
+{
+	background-image: url("fondo.jpg");
+	background-position: top;
+	background-color:black;
+	background-repeat:no-repeat;
+	color:#f8eacf;
+}
+
+body a
+{
+	text-decoration:none;
+	color:white;
+	
+}
+
+#logo
+{
+	background-image: url("logo.png");
+	width:137px;
+	height:134px;
+	background-repeat:no-repeat;
+	position:relative;
+	top:50px;
+	margin:auto;
+}
+
+
+#contenedor
+{
+	font-family: 'Helvetica';
+	width:1024px;
+	height:768px;
+	margin: auto;
+
+	
+}
+
+#botones
+{
+	font-family: 'vevey';
+	font-size:35px;
+	
+	width:204px;
+	height:255px;
+	
+	position:relative;
+	float:right;
+	top:470px;
+	left:20px;
+}
+
+#botones a
+{
+	text-decoration:none;
+	color:white;
+	
+}
+
+#fechas
+{
+	width:123px;
+	height:255px;
+	
+	position:relative;
+	float:left;
+	top:470px;
+	margin-left:70px;	
+}
+
+#fechas a
+{
+	text-decoration:none;
+	color:#f8eacf;
+}
+
+#fechas b
+{
+	
+	font-family: 'vevey';
+	font-size:35px;
+}
+
+#box
+{
+	width:618px;
+	height:536px;
+	margin:auto;
+	position:relative;
+	top:68px;
+}
+
+.categorias
+{
+	font-family: 'Helvetica';
+	font-size:35px;
+	position:relative;
+	float:left;
+	width:148px;
+}
+
+.categorias a
+{
+	text-decoration:none;
+	color:#f8eacf;
+}
+
+.musica
+{
+	position:relative;
+	
+}
+
+.musica img
+{
+	
+	position:relative;
+	float:left;
+	width:200px;
+}
+
+.musica b
+{
+	
+	position:relative;
+	float:left;
+}
+
+
+
+.musicainfo
+{
+	position:relative;
+	float:left;
+	
+	width:250px;
+	
+	left:20px;
+	font-family: 'Helvetica';
+	font-size:12px;
+}
+
+#catvideo
+{
+	width:618px;
+	height:536px;
+	
+}
+
+#video 
+{
+	position:relative;
+	width:320px;
+	height:1000px;
+
+	margin:auto;	
+}
+
+.limpiarf { 
+	clear:both;
+}
+
+#contacto
+{
+	width:618px;
+	height:500px;
+	background-image: url("contacto.png");	
+	
+}
+
+#contactobox
+{
+	position:relative;
+	width:320px;
+	height:600px;
+	top:80px;
+	margin:auto;
+	color:black;
+	
+}
+
+#contactobox h5
+{
+	font-size:30px;
+	
+	
+}
+
+.enviar
+{
+	text-align:right;
+}
+#biobox
+{
+	width:618px;
+	height:200px;
+	overflow:hidden;
+	font-size:12px;
+	
+}
+
+#biohidden
+{
+	width:3200px;
+	height:200px;
+	position:relative;
+	right:0px;
+}
+
+#bioinfobox
+{
+	width:3200px;
+	height:200px;
+	position:relative;
+	right:0px;
+}
+
+.fotobox img
+{
+	width:618px;
+}
+.fotobox 
+{
+	position:relative;
+	float:left;
+	
+
+}
+
+#boxbiobt
+{
+	position:relative;
+	index-z:0;
+	top:-40px;
+	right:30px;
+	float:right;
+}
+.biobt
+{
+	position:relative;
+	margin:5px;
+	float:left;
+	cursor:pointer;
+}
+
+.bioinfo
+{
+	width:618px;
+	position:relative;
+	float:left;	
+}
+
+
+

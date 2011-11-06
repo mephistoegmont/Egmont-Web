@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Egmont</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= yield :head %>
+
+
+</head>
+<body>
+	
+	<div id="contenedor">
+		
+		<div id ="fechas">
+			<b>DATES</b>
+			
+			<% @todascategorias = Categoria.all %>
+			<% if !@todascategorias.blank? %>
+			<% for categoria in @todascategorias %> 
+				<% @todasgalerias = categoria.noticias %>
+				<% if categoria.titulo == "stage" %>
+					
+					<% for noticia in @todasgalerias %>
+						<div class="stage">
+							<%= link_to noticia.titulo, noticia %>
+						</div>
+					<% end %>
+					
+					<% end %>		
+				<% end %>
+			<% end %>
+			
+		</div>
+		
+		
+		<div id="botones">
+			<%= link_to "BIO", bio_path%><br/>
+			<%= link_to "NEWS", categorias_path%><br/>
+			<%= link_to "MUSIC", music_path%><br/>
+			<%= link_to "VIDEO", video_path%><br/>
+			<%= link_to "CONTACT", contact_path%><br/>
+	
+			<%= link_to "Nuevas noticias", news_path%>
+		</div>
+  		<div id="logo"></div>	
+   		<div id="box">   <%= yield %>   </div>
+  
+  </div>
+
+</body>
+</html>
+
