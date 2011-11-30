@@ -1,4 +1,5 @@
 class EstaticaController < ApplicationController
+  before_filter :require_user, :only => :contact
   def hom
   end
 

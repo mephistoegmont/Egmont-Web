@@ -13,6 +13,14 @@
 	
 	<div id="contenedor">
 		
+		<% if current_user %>
+		        <%= link_to "Edit Profile", edit_user_path(current_user.id)%>
+		        <%= link_to "Logout", :logout%>
+		        <% else %>
+		        <%= link_to "Register", new_user_path%> | 
+		        <%= link_to "Login", :login %>
+		<% end %>
+		
 		<div id ="fechas">
 			<b>DATES</b>
 			
@@ -37,12 +45,13 @@
 		
 		<div id="botones">
 			<%= link_to "BIO", bio_path%><br/>
-			<%= link_to "NEWS", categorias_path%><br/>
+			<%= link_to_unless_current "NEWS", categorias_path %><br/>
 			<%= link_to "MUSIC", music_path%><br/>
 			<%= link_to "VIDEO", video_path%><br/>
 			<%= link_to "CONTACT", contact_path%><br/>
 	
 			<%= link_to "Nuevas noticias", news_path%>
+			
 		</div>
   		<div id="logo"></div>	
    		<div id="box">   <%= yield %>   </div>

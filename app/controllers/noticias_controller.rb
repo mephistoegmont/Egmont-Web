@@ -1,4 +1,5 @@
 class NoticiasController < ApplicationController
+   before_filter :require_user, :only => :index
   # GET /noticias
   # GET /noticias.json
   def index
